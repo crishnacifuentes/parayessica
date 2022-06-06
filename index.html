@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>para yessica</title>
+    <style>
+        .body {
+            background-color: brown;
+            text-align: center;
+        }
+
+        .body__title {
+            color: aquamarine;
+        }
+
+        .body__img {
+            width: 20%;
+            height: 20%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body__title"> quieres volver conmigo?</h1>
+    <img 
+    src="https://scontent.cdninstagram.com/v/t51.39111-15/286650856_451319983066247_4471388846109533150_n.jpg?stp=dst-jpg_s640x640&_nc_cat=100&ccb=1-7&_nc_sid=5a057b&_nc_ohc=DotNk5c6IRoAX_YTjxv&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=02_ARoftB7Le5U87iEos7Z7dMmKc2rm9iRV86ZrgvduFpDvGw&oe=62A30A54" 
+    alt="foto de nosotros" class="body__img"/>
+    <button id="yes">SI❤</button>
+    <button id="no">NO😥</button>
+
+    <script>
+      const botonsi = document.getElementById('yes');
+      const botonno = document.getElementById('no');
+
+      const yavolvimos = () => {
+          alert('te extraño yessica, mandame mensaje😭');
+          alert('esto lo hice para ti,te amo corazoncito');
+          alert('escucha esta cancion ❤');
+          location.href = 'https://www.youtube.com/watch?v=rY17aUBrk_0'
+      } 
+
+      const nomedigasqueno = () => {
+      botonno.style.position = 'absolute';
+      botonno.style.top = (Math.random() * window.innerHeight) + 'px';
+      botonno.style.left = (Math.random() * window.innerWidth) + 'px';
+      }
+
+      botonsi.addEventListener('click', yavolvimos);
+      botonno.addEventListener('mouseover', nomedigasqueno);
+    </script>
+</body>
+
+</html>
